@@ -284,6 +284,9 @@ footer {
 
 /* Responsive per mobile */
 @media (max-width: 768px) {
+    .main-title {
+        font-size: 3rem;
+    }
     .carousel-container {
         max-width: 95%;
     }
