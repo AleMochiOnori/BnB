@@ -163,6 +163,7 @@ ul {
 .btn-wa { 
     display: inline-block; 
     padding: 10px 20px; 
+    font-size: 1.8rem;
     background: #2fad5d; 
     color: #fff; 
     text-decoration: none; 
@@ -178,14 +179,14 @@ ul {
 
 .btn-bnb {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 11px 20px;
     background: #ff385c;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
     transition: scale ease 0.3s;
     border: none;
-    font-size: 1.1rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -282,6 +283,181 @@ footer {
     display: none;
 }
 
+/* Host Card */
+.host-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 500px;
+    height: 100px;
+    border: 1px solid #f0f0f0;
+}
+
+.host-image {
+    flex-shrink: 0;
+}
+
+.host-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff385c;
+}
+
+.host-info {
+    text-align: left;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right {
+    text-align: r
+}
+
+.host-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+.host-experience {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+t
+/* Property Details */
+.property-details {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border-left: 4px solid #ff385c;
+}
+
+.location {
+    margin-bottom: 1.5rem;
+}
+
+.location h3 {
+    color: #ff385c;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.location p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.specifications {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 100px;
+}
+
+.spec-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff385c;
+    margin-bottom: 0.5rem;
+}
+
+.spec-label {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Distances Section */
+.distances-section {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border-left: 4px solid #2fad5d;
+}
+
+.distances-section h3 {
+    color: #2fad5d;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.distances-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.distance-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.distance-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.distance-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.distance-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.distance-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.distance-time {
+    color: #2fad5d;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
 /* Responsive per mobile */
 @media (max-width: 768px) {
     .main-title {
@@ -314,5 +490,32 @@ footer {
 
     .social-links {
         flex-direction: column;
+    }
+
+    .specifications {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .spec-item {
+        min-width: 80px;
+        padding: 0.8rem;
+    }
+
+    .spec-number {
+        font-size: 1.8rem;
+    }
+
+    .distances-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .distance-card {
+        padding: 0.8rem;
+    }
+
+    .distance-name {
+        font-size: 0.9rem;
     }
 }
