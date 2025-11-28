@@ -1,9 +1,12 @@
 /* STYLES MINIMI (modificabili) */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
 body { 
-    font-family: Arial, sans-serif; 
+    font-family: 'Caveat', cursive; 
     margin: 0; 
     line-height: 1.6; 
-    color: #222; 
+    color: #222;
+    font-size: 1.4rem;
 }
 
 .main-container {
@@ -33,7 +36,7 @@ body {
 }
 
 .rating {
-    font-size: 4.5rem;
+    font-size: 6rem;
     font-weight: bold;
     color: #333;
     margin: 0;
@@ -41,7 +44,7 @@ body {
 }
 
 .rating-title {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin: 0 0 0.8rem 0;
@@ -64,15 +67,8 @@ body {
     text-align: center;
 }
 
-.rating-title {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #333;
-    margin: 0 0 0.8rem 0;
-}
-
 .rating-description {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #666;
     line-height: 1.4;
     margin: 0;
@@ -114,7 +110,7 @@ body {
 
 
 .main-title {
-    font-size: 4.5rem;
+    font-size: 6rem;
     margin: 0;
     font-weight: bold;
     color : white
@@ -130,7 +126,7 @@ section {
 }
 
 section p,li {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
 
@@ -153,14 +149,14 @@ section p {
 
 h1 { 
     margin-top: 0;
-    font-size: 3rem;
+    font-size: 4.2rem;
     color: #111;
     font-weight: bold;
 }
 
 h2 { 
     margin-top: 0;
-    font-size: 2.5rem;
+    font-size: 3.6rem;
     color: #333;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -168,7 +164,7 @@ h2 {
 
 h3 { 
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 2.9rem;
     color: #444;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -183,7 +179,7 @@ ul {
 .btn-wa { 
     display: inline-block; 
     padding: 10px 20px; 
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     background: #2fad5d; 
     color: #fff; 
     text-decoration: none; 
@@ -206,7 +202,7 @@ ul {
     border-radius: 6px;
     transition: scale ease 0.3s;
     border: none;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     font-weight: 600;
 }
 
@@ -232,7 +228,7 @@ footer {
     text-align: center; 
     padding: 20px; 
     background: #f3f3f3; 
-    font-size: 14px; 
+    font-size: 1.3rem; 
 }
 
 /* Carosello Styles */
@@ -279,7 +275,7 @@ footer {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    font-size: 2rem;
+    font-size: 2.8rem;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
@@ -347,14 +343,14 @@ footer {
 }
 
 .host-name {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #333;
     margin: 0 0 8px 0;
 }
 
 .host-experience {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #666;
     margin: 0;
 }
@@ -375,11 +371,11 @@ t
 .location h3 {
     color: #ff385c;
     margin-bottom: 0.5rem;
-    font-size: 1.8rem;
+    font-size: 2.7rem;
 }
 
 .location p {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     color: #666;
     margin: 0;
 }
@@ -404,14 +400,14 @@ t
 }
 
 .spec-number {
-    font-size: 2rem;
+    font-size: 2.9rem;
     font-weight: bold;
     color: #ff385c;
     margin-bottom: 0.5rem;
 }
 
 .spec-label {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     color: #666;
     text-align: center;
 }
@@ -428,7 +424,7 @@ t
 .distances-section h3 {
     color: #2fad5d;
     margin-bottom: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 2.7rem;
     text-align: center;
 }
 
@@ -455,7 +451,7 @@ t
 }
 
 .distance-icon {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-right: 1rem;
     flex-shrink: 0;
 }
@@ -469,14 +465,14 @@ t
 .distance-name {
     font-weight: 600;
     color: #333;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 0.2rem;
 }
 
 .distance-time {
     color: #2fad5d;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
 }
 
 /* Amenities Section */
@@ -491,7 +487,7 @@ t
 .amenities-section h3 {
     color: #ff385c;
     margin-bottom: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 2.7rem;
     text-align: center;
 }
 
@@ -518,7 +514,7 @@ t
 }
 
 .amenity-icon {
-    font-size: 2rem;
+    font-size: 2.9rem;
     margin-right: 1.2rem;
     flex-shrink: 0;
 }
@@ -532,13 +528,13 @@ t
 .amenity-name {
     font-weight: 600;
     color: #333;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     margin-bottom: 0.4rem;
 }
 
 .amenity-description {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     font-style: italic;
 }
 
@@ -595,7 +591,7 @@ section {
 /* Responsive per mobile */
 @media (max-width: 768px) {
     .main-title {
-        font-size: 3rem;
+        font-size: 4.5rem;
     }
     .carousel-container {
         max-width: 95%;
@@ -637,7 +633,7 @@ section {
     }
 
     .spec-number {
-        font-size: 1.8rem;
+        font-size: 2.7rem;
     }
 
     .distances-grid {
@@ -650,7 +646,7 @@ section {
     }
 
     .distance-name {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
 
     .amenities-grid {
@@ -663,15 +659,15 @@ section {
     }
 
     .amenity-icon {
-        font-size: 1.8rem;
+        font-size: 2.7rem;
         margin-right: 1rem;
     }
 
     .amenity-name {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .amenity-description {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 }
