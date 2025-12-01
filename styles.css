@@ -204,6 +204,7 @@ ul {
     border: none;
     font-size: 3.2rem;
     font-weight: 600;
+    font-family: 'Caveat', cursive;
 }
 
 .btn-bnb:hover {
@@ -386,7 +387,6 @@ t
     gap: 1rem;
     margin-bottom: 5rem;
 }
-
 .spec-item {
     display: flex;
     flex-direction: column;
@@ -396,8 +396,13 @@ t
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     min-width: 100px;
+   transition: 0.3s ease;
 }
 
+.spec-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 .spec-number {
     font-size: 2.9rem;
     font-weight: bold;
@@ -445,7 +450,7 @@ t
 }
 
 .distance-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -508,7 +513,7 @@ t
 }
 
 .amenity-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -590,7 +595,7 @@ section {
 /* Responsive per mobile */
 @media (max-width: 768px) {
     .main-title {
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
     .carousel-container {
         max-width: 95%;
